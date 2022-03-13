@@ -1,0 +1,212 @@
+*{margin: 0;
+    padding: 0;}
+
+
+
+
+header{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 0;
+    background-color: rgb(44, 62, 80);}
+
+header h1{color: white;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    margin-left: 4em;}
+
+nav{margin-right: 4em;}
+
+nav a{color: white;
+    text-decoration: none;
+    margin-right: 1.8em;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 15px  ;}
+
+nav a:hover{color: rgb(26, 188, 156);
+    transition-delay: 180ms;}
+
+
+
+
+
+.sec-1-padding{padding: 60px;
+    background-color: rgb(26, 188, 156);}
+
+.sec-1-flex{display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+.sec-1-avatar{background-image: url(imagens/avataaars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15em;
+    height: 15em;
+    margin-bottom: 30px;}
+
+.sec-1-flex h1{color: white;
+    font-size: 3.9em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;}
+
+.sec-1-flex p{font-size: 1.4em;
+    color: white;
+    margin-bottom: 20px;}
+
+
+
+
+
+.sec-2-padding{padding: 60px 0;}
+
+.sec-2-padding h1{text-align: center;
+    color: rgb(44, 62, 80);
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;}
+
+.sec-2-flex{display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: auto;}
+
+.sec-2-flex .img{width: 22em;
+    height: 16em;
+    margin: 23px 11px;
+    border-radius: 8px;}
+
+#img-1{background-image: url(imagens/cabin.png);
+    background-size: cover;}
+
+#img-2{background-image: url(imagens/cake.png);
+    background-size: cover;}
+
+#img-3{background-image: url(imagens/circus.png);
+    background-size: cover;}
+
+#img-4{background-image: url(imagens/game.png);
+    background-size: cover;}
+
+#img-5{background-image: url(imagens/safe.png);
+    background-size: cover;}
+
+#img-6{background-image: url(imagens/submarine.png);
+    background-size: cover;}
+                    
+
+
+
+
+.sec-3-padding{padding: 60px 0;
+    background-color: rgb(26, 188, 156);}
+
+.sec-3-flex{display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 725px;
+    padding: 10px;
+    margin: auto;}
+
+.sec-3-flex h1{text-align: center;
+    color: white;
+    font-size: 3.2em;
+    margin-bottom: 30px;
+    text-transform: uppercase;}
+
+.sec-3-flex p{text-align: center;
+    font-size: 1.4em;
+    color: white;
+    text-align: justify;}
+
+.sec-3-flex #p{columns: 2;
+    line-height: 30px;}
+
+.sec-3-flex #p1{padding-right: 10px;
+    padding-bottom: 10px;}
+
+.sec-3-flex a{text-decoration: none;
+    font-size: 1.3em;
+    color: white;
+    padding: 15px 20px;
+    border: 2px solid white;
+    border-radius: 5px;}
+
+@media(max-width: 500px){
+    .sec-3-flex #p{columns: 1;}}
+
+
+
+
+.sec-4-padding{padding: 60px 0;}
+
+.sec-4-padding h1{text-align: center;
+    font-size: 3.2em;
+    color: rgb(44, 62, 80);
+    margin-bottom: 30px;
+    text-transform: uppercase;}
+
+.sec-4-flex{display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: auto;
+    padding: 10px;}
+
+.sec-4-flex input{padding: 25px 0;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    border: none;
+    border-bottom: 1px solid grey;
+    text-align: left;}
+
+.sec-4-flex a{text-decoration: none;
+    font-size: 1.4em;
+    color: white;
+    padding: 15px 25px;
+    background-color: rgb(26, 188, 156);
+    border-radius: 5px;
+    align-self: flex-start;}
+
+
+
+
+
+.footer-padding{padding: 80px 0;
+    background-color: rgb(44, 62, 80);}    
+
+.footer-flex{display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;}
+
+.footer-about{width: 500px;}
+
+.footer-about h2{font-size: 2em;
+    text-align: center;
+    color: white;
+    margin: 20px 0;}
+
+.footer-about p{font-size: 1.25em;  
+    color: white;
+    text-align: center;}
+
+@media(max-width: 500px){
+    .footer-flex{flex-direction: column;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

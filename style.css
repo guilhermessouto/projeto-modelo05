@@ -117,23 +117,21 @@ nav a:hover{color: rgb(26, 188, 156);
     margin-bottom: 30px;
     text-transform: uppercase;}
 
-.sec-3-flex p{text-align: center;
+.sec-3-flex #p{columns: 2;
+    line-height: 30px;
+    text-align: center;
     font-size: 1.4em;
+    margin: 5px 5px;
     color: white;
     text-align: justify;}
-
-.sec-3-flex #p{columns: 2;
-    line-height: 30px;}
-
-.sec-3-flex #p1{padding-right: 10px;
-    padding-bottom: 10px;}
 
 .sec-3-flex a{text-decoration: none;
     font-size: 1.3em;
     color: white;
     padding: 15px 20px;
     border: 2px solid white;
-    border-radius: 5px;}
+    border-radius: 5px;
+    margin-top: 5px;}
 
 @media(max-width: 500px){
     .sec-3-flex #p{columns: 1;}}
@@ -180,7 +178,9 @@ nav a:hover{color: rgb(26, 188, 156);
 .footer-flex{display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;}
+    padding: 1em 0;
+    max-width: 850px;
+    margin: auto;}
 
 .footer-about{width: 500px;}
 
@@ -191,11 +191,9 @@ nav a:hover{color: rgb(26, 188, 156);
 
 .footer-about p{font-size: 1.25em;  
     color: white;
-    text-align: center;}
-
-@media(max-width: 500px){
-    .footer-flex{flex-direction: column;}
+    text-align: center;
 }
+
 
 
 

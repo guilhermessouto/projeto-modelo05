@@ -4,25 +4,78 @@
 
 
 
-header{display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 37px 0;
+
+
+
+
+
+
+
+
+.hamburguer{width: 2em;
+    height: 2em;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;}
+    
+    .line{background-color: white;
+        height: .12em;}
+
+    #line3{height: .12em;}
+    
+
+
+
+
+
+
+@media(max-width: 850px){
+    .hamburguer{display: flex;}
+    
+    .line{background-color: white;
+        height: .13em;}
+
+
+    header nav{display: none;}
+}
+
+@media(max-width: 400px){
+    .header-1{flex-direction: column;}
+
+    .hamburguer{margin-top: 15px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header{padding: 40px 0;
     background-color: rgb(44, 62, 80);}
 
-header h1{color: white;
+.header-1{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;}
+
+.header-1 h1{color: white;
     text-transform: uppercase;
     font-size: 1.8em;
-    margin-left: 4em;}
-
-nav{margin-right: 4em;}
+    text-align: center;}
 
 nav a{color: white;
     text-decoration: none;
-    margin-right: 1.8em;
     font-weight: bold;
     font-size: 1.3em;
-    padding: 15px  ;}
+    padding: 15px ;}
 
 nav a:hover{color: rgb(26, 188, 156);
     transition-delay: 180ms;}
@@ -31,39 +84,43 @@ nav a:hover{color: rgb(26, 188, 156);
 
 
 
-.sec-1-padding{padding: 60px;
+.sec-1-padding{padding: 60px 0;
     background-color: rgb(26, 188, 156);}
 
 .sec-1-flex{display: flex;
     flex-direction: column;
-    align-items: center;}
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;}
 
 .sec-1-avatar{background-image: url(imagens/avataaars.svg);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 15em;
-    height: 15em;
+    width: 14rem;
+    height: 14rem;
     margin-bottom: 30px;}
 
 .sec-1-flex h1{color: white;
-    font-size: 3.9em;
-    text-transform: uppercase;
+    font-size: 2.5em;
     margin-bottom: 20px;
     text-align: center;}
 
 .sec-1-flex p{font-size: 1.4em;
     color: white;
-    margin-bottom: 20px;}
+    margin-bottom: 20px;
+    text-align: center;}
 
 
 
 
 
-.sec-2-padding{padding: 60px 0;}
+.sec-2-padding{padding: 60px 0;
+    }
 
 .sec-2-padding h1{text-align: center;
     color: rgb(44, 62, 80);
-    font-size: 3.2em;
+    font-size: 2.2em;
     margin-bottom: 20px;
     text-transform: uppercase;}
 
@@ -79,23 +136,38 @@ nav a:hover{color: rgb(26, 188, 156);
     border-radius: 8px;}
 
 #img-1{background-image: url(imagens/cabin.png);
-    background-size: cover;}
+    background-repeat: no-repeat;
+    background-size: contain;}
 
 #img-2{background-image: url(imagens/cake.png);
-    background-size: cover;}
+    background-repeat: no-repeat;
+    background-size: contain;}
 
 #img-3{background-image: url(imagens/circus.png);
-    background-size: cover;}
+    background-repeat: no-repeat;
+    background-size: contain;}
 
 #img-4{background-image: url(imagens/game.png);
-    background-size: cover;}
+    background-repeat: no-repeat;
+    background-size: contain;}
 
 #img-5{background-image: url(imagens/safe.png);
-    background-size: cover;}
+    background-repeat: no-repeat;
+    background-size: contain;}
 
 #img-6{background-image: url(imagens/submarine.png);
-    background-size: cover;}
+    background-repeat: no-repeat;
+    background-size: contain;}
                     
+@media(max-width: 330px){
+    .sec-2-flex .img{margin: 0;}
+}
+
+
+
+
+
+
 
 
 
@@ -113,7 +185,7 @@ nav a:hover{color: rgb(26, 188, 156);
 
 .sec-3-flex h1{text-align: center;
     color: white;
-    font-size: 3.2em;
+    font-size: 2.2em;
     margin-bottom: 30px;
     text-transform: uppercase;}
 
@@ -131,7 +203,7 @@ nav a:hover{color: rgb(26, 188, 156);
     padding: 15px 20px;
     border: 2px solid white;
     border-radius: 5px;
-    margin-top: 5px;}
+    margin-top: 20px;}
 
 @media(max-width: 500px){
     .sec-3-flex #p{columns: 1;}}
@@ -142,7 +214,7 @@ nav a:hover{color: rgb(26, 188, 156);
 .sec-4-padding{padding: 60px 0;}
 
 .sec-4-padding h1{text-align: center;
-    font-size: 3.2em;
+    font-size: 2.2em;
     color: rgb(44, 62, 80);
     margin-bottom: 30px;
     text-transform: uppercase;}
@@ -179,10 +251,11 @@ nav a:hover{color: rgb(26, 188, 156);
     justify-content: center;
     align-items: center;
     padding: 1em 0;
-    max-width: 850px;
+    width: 75%;
     margin: auto;}
 
-.footer-about{width: 500px;}
+.footer-about{width: 50%;
+    margin: 20px;}
 
 .footer-about h2{font-size: 2em;
     text-align: center;
@@ -194,7 +267,11 @@ nav a:hover{color: rgb(26, 188, 156);
     text-align: center;
 }
 
-
+@media(max-width: 550px){
+    .footer-flex{flex-direction: column;}
+    .footer-about{width: auto;
+        margin: 0;}
+}
 
 
 

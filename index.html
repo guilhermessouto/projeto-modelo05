@@ -10,22 +10,24 @@
 <body>
 
     <header>
-
         <div class="header-1">
             <h1>Start Bootstrap</h1>
-            <nav>
-                <a href="#">Portifólio</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </nav>
 
-            <div class="hamburguer">
-                <div class="line" id="line1"></div>
-                <div class="line" id="line2"></div>
-                <div class="line" id="line3"></div>
-            </div>
+            <nav id="nav">
+                <div id="hamburguer" onclick="clicar()">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                </div>
+
+                <ul id="menu">
+                    <li><a href="#">Portifólio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </header><!--/header-->
+</header><!--/header-->
 
     <section class="sec-1-padding">
         <div class="sec-1-flex">
@@ -87,5 +89,7 @@
             </div>
         </div>
     </footer><!--/footer-->
+
+    <script src="script.js"></script>
 </body>
 </html>

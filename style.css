@@ -23,7 +23,8 @@ header{padding: 40px 0;
     font-size: 1.3em;
     padding: 15px ;}
 
-#nav a:hover{color: rgb(26, 188, 156);
+#nav a:hover{color: rgb(42, 62, 82);
+    text-shadow: none;
     transition-delay: 180ms;}
 
 

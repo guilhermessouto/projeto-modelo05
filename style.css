@@ -67,14 +67,15 @@ header{padding: 40px 0;
     #hamburguer{display: flex;}
 }
 
-@media(max-width: 349px){
+@media(max-width: 379px){
     #menu{top: 145px;}
 }
 
 @media(max-width: 270px){
     .header-1{flex-direction: column;}
-    #hamburguer{margin-top: 20px;}
-    #menu{top: 166px;}
+    #hamburguer{margin-top: 20px;
+        padding: 0;}
+    #menu{top: 188px;}
 }
 
 
